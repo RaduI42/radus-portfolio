@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./key.js">
+        </script>
+          <title>Unit Converter</title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+   body {
+  text-align:center;
+  background-color: aquamarine;
+}
+
+.select {
+	border-radius: 10px;
+	height: 40px;
+	width: 100px;
+	outline: none;
+	border-color: black;
+}
+</style>
+<body>
+   
+    <script>
+    $(document).ready(function(){
+        $("input").focus(function(){
+            $(this).css("background-color", "#cccccc");
+        });
+        $("input").blur(function(){
+            $(this).css("background-color", "#ffffff");
+        });
+    });
+      
+    </script>
+      
+    </head>
+    <body>
+        <div class="container1">
+            <center>
+          <h1>Unit Converter</h1>
+        </div>
+        
+        
+            
+        <!-- first input -->
+        <input id="input" class="input" type="number" onInput="lengthConvert()" onChange="lengthConvert()"></input>
+        
+        <!-- first select -->
+            <select id="selectInput" class="select" onChange="selectFunction()">
+                <option value="m">Metres</option>
+                <option value="cm">Centimetres</option>
+                <option value="mm">Milimetres</option>
+            </select>
+        
+            
+        <!-- second input -->
+        <p><input id="output" class="input" type="number" onInput="reverseConvert()" onChange="reverseConvert()"></input>
+      
+    <!-- second select -->
+      <select id="selectOutput" class="select" onChange="selectFunction()">
+                <option value="m">Metres</option>
+                <option value="cm">Centimetres</option>
+                <option value="mm">Milimetres</option>
+            </select>
+        </p>
+        
+    
+    </body>
+    </html>
+</body>
+</html>
