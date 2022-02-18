@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Donations</title>
+    <link rel="stylesheet" href="./demo1.css">
+    <script src="./activity.js"></script>
+</head>
+<body onload="myFunction()">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link " href="./demo1.html">Home</a>
+            <a class="nav-item nav-link" href="./about_d.html">About</a>
+            <a class="nav-item nav-link" href="./registration.html">Registration</a>
+            <a class="nav-item nav-link" href="./events.html">Events</a>
+            <a class="nav-item nav-link active" href="./donations.html">Donations</a>
+            <a class="nav-item nav-link" href="./FAQ.html">FAQ</a>
+        </div>
+      </nav>
+      <div class="container" >
+        <h2>Donation form</h2>
+        <form action="/action_page.php" onsubmit="mySubmit">
+          <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" class="form-control" id="email" placeholder="First Name" name="fname" onfocus="lightInput(this)">
+          </div>
+          <div class="form-group">
+            <label for="Surname">Surname:</label>
+            <input type="text" class="form-control" id="surname" placeholder="Surname" name="SNAME" onfocus="lightInput(this)" >
+          </div>
+           <form action="/action_page.php">
+          <div class="form-group">
+            <label for="Organisation">Organisation:</label>
+            <input type="text" class="form-control" id="Organisation" placeholder="Organisation" name="Organisation" onfocus="lightInput(this)">
+          </div>
+          <div class="form-group">
+            <label for="Position in Organisation">Position in Organisation:</label>
+            <input type="text" class="form-control" id="Position in Organisation" placeholder="Position in Organisation" name="Position in Organisation" onfocus="lightInput(this)">
+          </div>
+          <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="Email" class="form-control" id="Email" placeholder="Email" name="Email" onfocus="lightInput(this)">
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone:</label>
+            <input type="text" class="form-control" id="Phone" placeholder="Phone" name="Phone" onfocus="lightInput(this)">
+          </div>
+          <div class="form-group">
+            <label for="Phone">Pledge Amount:</label>
+            <input type="Amount" class="form-control" id="Phone" placeholder="Pledge Amount" name="Pledge Amount"onfocus="lightInput(this)">
+          </div>
+          Details<br><textarea name = 'details' cols="50" rows="10" onfocus="lightInput(this)"></textarea><br>
+          <button type = 'submit' class="btn">
+          <hr>
+          </button>
+           </form>
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+      
+<div class="container-fluid p-3 my-3 bg-dark text-white" >
+    <div class="foot">
+    You can fine our physical address at:
+    Address :49 Valangentambo Driftsands Street,
+    7784,Mfuleni,Khayelitsha
+    Mzamomtsha Primary School contact Details:
+    Emis Number: 106461792
+    Postal Address: Po Box 40034, Elonwabeni, 7791
+    Phone Number: 219010008
+    Work: +27 21 901 0008
+    Cell: +27 83 538 7791
+    Facebook: Mzamomtsha Primary Driftsands (Our Facebook Page)
+    mzamomtshaprimary@facebook.com
+    mzamomtsha_primary@instagram.com</div>
+  </div>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+
+
+</body>
+</html>

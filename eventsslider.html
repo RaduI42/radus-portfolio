@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="carousel">
+        <button class="carousel_button previous" id="previous"></button>
+        <div class="carousel__images">
+            <img src="./run.jfif" alt="">
+            <img src="./netball.PNG" alt="">
+            <img src="./kids.png" alt="">
+            <img src="./career.jpg" alt="">
+            <img src="./bookfair.png" alt="">
+            <img src="./concert.jpg" alt="">
+        </div>
+        <button class="carousel_button next" id="next"></button>
+    </div>
+
+
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    .carousel {
+        align-items: center;
+        display: flex;
+        margin: 2rem auto;
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+    
+    }
+    .carousel__images {
+        display: flex;
+        transform: translateX(0);
+        transition: transform 0.25s;
+    }
+    .img{
+        border-radius: 5px;
+    }
+    .button {
+        background: teal;
+        border: 0;
+        border-radius: 50%;
+        color: thistle;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        height: 3rem;
+        opacity: 0.25;
+        position: absolute;
+        transition: 0.25s;
+        width: 3rem;
+        z-index: 1;
+    }
+</style>
+</html>
