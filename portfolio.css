@@ -261,6 +261,7 @@ a {
     flex-wrap: wrap;
     margin-top: 5%;
     margin-bottom: 1%;
+    background-color: #252525;
 }
 .cards a:hover {
     color: yellow;
