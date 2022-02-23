@@ -86,10 +86,7 @@ span{
     height: auto;
     width: 243px;
 }
-.about {
-    display: flex;
-    text-align: center;
-}
+
 .about-text{
     width: 400px;
 }
