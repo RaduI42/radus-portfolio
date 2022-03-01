@@ -143,7 +143,7 @@ def finish_deposit():
     file.write(file_data)
     file.close()
 
-    current_balance_label.config(text="Current Balance : £"+str(updated_balance),fg="green")
+    current_balance_label.config(text="Current Balance : R"+str(updated_balance),fg="green")
     deposit_notif.config(text='Balance Updated', fg='green')
  
 def withdraw():
@@ -196,7 +196,7 @@ def finish_withdraw():
     file.write(file_data)
     file.close()
 
-    current_balance_label.config(text="Current Balance : £"+str(updated_balance),fg="green")
+    current_balance_label.config(text="Current Balance : R"+str(updated_balance),fg="green")
     withdraw_notif.config(text='Balance Updated', fg='green')
     
 
@@ -217,7 +217,7 @@ def personal_details():
     Label(personal_details_screen, text="FullName : "+details_name, font=('Calibri',12)).grid(row=1,sticky=W)
     Label(personal_details_screen, text="Age : "+details_age, font=('Calibri',12)).grid(row=2,sticky=W)
     Label(personal_details_screen, text="Gender : "+details_gender, font=('Calibri',12)).grid(row=3,sticky=W)
-    Label(personal_details_screen, text="Balance :£"+details_balance, font=('Calibri',12)).grid(row=4,sticky=W)
+    Label(personal_details_screen, text="Balance :R "+details_balance, font=('Calibri',12)).grid(row=4,sticky=W)
 def login():
     #Vars
     global temp_login_name
