@@ -214,7 +214,7 @@ def personal_details():
     personal_details_screen.title('Personal Details')
     #Labels
     Label(personal_details_screen, text="Personal Details", font=('Calibri',12)).grid(row=0,sticky=N,pady=10)
-    Label(personal_details_screen, text="Name : "+details_name, font=('Calibri',12)).grid(row=1,sticky=W)
+    Label(personal_details_screen, text="FullName : "+details_name, font=('Calibri',12)).grid(row=1,sticky=W)
     Label(personal_details_screen, text="Age : "+details_age, font=('Calibri',12)).grid(row=2,sticky=W)
     Label(personal_details_screen, text="Gender : "+details_gender, font=('Calibri',12)).grid(row=3,sticky=W)
     Label(personal_details_screen, text="Balance :£"+details_balance, font=('Calibri',12)).grid(row=4,sticky=W)
@@ -243,13 +243,13 @@ def login():
 
 #Image import
 img = Image.open('img.jpg')
-img = img.resize((150,150))
+img = img.resize((250,250))
 img = ImageTk.PhotoImage(img)
 
 #Labels
-Label(master, text = "Custom Banking Beta", font=('Calibri',14)).grid(row=0,sticky=N,pady=10)
-Label(master, text = "the most secure bank you've probably used", font=('Calibri',12)).grid(row=1,sticky=N)
-Label(master, image=img).grid(row=2,sticky=N,pady=15)
+Label(master, text = "The Bank of RADU", font=('Calibri',14)).grid(row=0,sticky=N,pady=10)
+Label(master, text = "We take your money serious!!", font=('Calibri',12)).grid(row=1,sticky=N)
+Label(master, image=img).grid(row=2,sticky=N,pady=20)
 
 #Buttons
 Button(master, text="Register", font=('Calibri',12),width=20,command=register).grid(row=3,sticky=N)
